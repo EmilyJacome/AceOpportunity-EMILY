@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -11,40 +11,151 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="uWP-cj-vO1">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GitHub_Tester" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="8Se-Rm-y0J" customClass="ViewController" customModule="GitHub_Tester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cr6-1w-RSt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENo-MD-4Za">
-                                <rect key="frame" x="155" y="216" width="65" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKH-Ms-nF1">
+                                <rect key="frame" x="139.5" y="51" width="135" height="28.5"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Hw-eI-idW">
+                                <rect key="frame" x="44" y="80.5" width="327" height="165"/>
+                                <color key="backgroundColor" red="0.8162872779" green="0.8162872779" blue="0.8162872779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">1. To add an event that interests you on a personalized list, swipe left and click on the add button.                                                                2. To see  what is on your list, click on the list button.                                                       3. Click the info ("i") button next to the descriptions to visit their website for more information! </string>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.8162872779" green="0.8162872779" blue="0.8162872779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <variation key="heightClass=regular-widthClass=regular" layoutMarginsFollowReadableWidth="NO"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Helpful Links" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bs3-Ty-e3x">
+                                <rect key="frame" x="134.5" y="343.5" width="145" height="28"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftL-5F-GWx">
+                                <rect key="frame" x="26" y="423" width="123" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="More Info">
+                                <color key="backgroundColor" red="0.8162872779" green="0.8162872779" blue="0.8162872779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Big Future">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="MoreInfoBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H0A-8a-BWl"/>
+                                    <action selector="BigFutureWeb:" destination="8Se-Rm-y0J" eventType="touchUpInside" id="weg-u4-zGf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zQ-SK-C8u">
-                                <rect key="frame" x="164" y="391" width="56" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOY-te-3iG">
+                                <rect key="frame" x="26" y="478" width="123" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Website">
+                                <color key="backgroundColor" red="0.8162872779" green="0.8162872779" blue="0.8162872779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Princeton Review">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="WebsiteLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x2y-EX-DPi"/>
+                                    <action selector="PrincetonWeb:" destination="8Se-Rm-y0J" eventType="touchUpInside" id="aHr-Ku-4d7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bn-I7-4Hl">
+                                <rect key="frame" x="26" y="536" width="123" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8162872779" green="0.8162872779" blue="0.8162872779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Cappex">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="CappexWeb:" destination="8Se-Rm-y0J" eventType="touchUpInside" id="2Qr-7m-6oG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWF-RG-cOz">
+                                <rect key="frame" x="256" y="423" width="125" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8162872779" green="0.8162872779" blue="0.8162872779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Khan Academy">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="KhanWeb:" destination="8Se-Rm-y0J" eventType="touchUpInside" id="LPu-Zg-vOq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMc-Hh-ad5">
+                                <rect key="frame" x="256" y="477" width="125" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8162872779" green="0.8162872779" blue="0.8162872779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Grammar Checker">
+                                    <color key="titleColor" red="0.0062569355139999996" green="0.0041967469109999997" blue="0.01074714467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="GrammerWeb:" destination="8Se-Rm-y0J" eventType="touchUpInside" id="BS9-nx-TXd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="College Helper:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peI-vh-kq2">
+                                <rect key="frame" x="26" y="379" width="121" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scholarship Info:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WpK-Ie-oOq">
+                                <rect key="frame" x="148" y="611" width="121" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Homework Helpers:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRS-i9-5hh">
+                                <rect key="frame" x="247" y="379" width="143" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHb-fj-dzn">
+                                <rect key="frame" x="256" y="533" width="125" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8162872779" green="0.8162872779" blue="0.8162872779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Quizlet">
+                                    <color key="titleColor" red="0.0062569355139999996" green="0.0041967469109999997" blue="0.01074714467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="QuizletWeb:" destination="8Se-Rm-y0J" eventType="touchUpInside" id="eY8-gD-LNh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdT-0C-dAe">
+                                <rect key="frame" x="148" y="658" width="123" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8162872779" green="0.8162872779" blue="0.8162872779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Scholly">
+                                    <color key="titleColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SchollyWeb:" destination="8Se-Rm-y0J" eventType="touchUpInside" id="9P3-b8-flr"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rIn-VR-WAK" firstAttribute="trailing" secondItem="2Hw-eI-idW" secondAttribute="trailing" constant="43" id="7iz-yt-VPf"/>
+                            <constraint firstItem="Bs3-Ty-e3x" firstAttribute="centerX" secondItem="rIn-VR-WAK" secondAttribute="centerX" id="hsB-GA-3k6"/>
+                            <constraint firstItem="2Hw-eI-idW" firstAttribute="leading" secondItem="rIn-VR-WAK" secondAttribute="leading" constant="44" id="kU4-by-RaC"/>
+                            <constraint firstItem="2Hw-eI-idW" firstAttribute="top" secondItem="pKH-Ms-nF1" secondAttribute="bottom" constant="1" id="ryY-SX-Dqu"/>
+                            <constraint firstItem="pKH-Ms-nF1" firstAttribute="top" secondItem="rIn-VR-WAK" secondAttribute="top" constant="7" id="tSs-AW-JPd"/>
+                            <constraint firstItem="Bs3-Ty-e3x" firstAttribute="top" secondItem="2Hw-eI-idW" secondAttribute="bottom" constant="97.670000000000002" id="uv4-5f-lFs"/>
+                            <constraint firstItem="pKH-Ms-nF1" firstAttribute="centerX" secondItem="rIn-VR-WAK" secondAttribute="centerX" id="vPd-Gh-oFl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rIn-VR-WAK"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZrI-8p-dWL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="702.89855072463774" y="-37.5"/>
         </scene>
     </scenes>
 </document>
